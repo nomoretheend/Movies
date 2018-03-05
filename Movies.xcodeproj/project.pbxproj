@@ -15,6 +15,7 @@
 		CA3436D7204DA19000789FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3436D5204DA19000789FDD /* LaunchScreen.storyboard */; };
 		CA3436E2204DA19000789FDD /* MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3436E1204DA19000789FDD /* MoviesTests.swift */; };
 		CA3436ED204DA19000789FDD /* MoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3436EC204DA19000789FDD /* MoviesUITests.swift */; };
+		CA3436FB204DB7E700789FDD /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3436FA204DB7E700789FDD /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CA3436E8204DA19000789FDD /* MoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3436EC204DA19000789FDD /* MoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUITests.swift; sourceTree = "<group>"; };
 		CA3436EE204DA19000789FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA3436FA204DB7E700789FDD /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				CA3436CA204DA19000789FDD /* AppDelegate.swift */,
 				CA3436CC204DA19000789FDD /* FirstViewController.swift */,
 				CA3436CE204DA19000789FDD /* SecondViewController.swift */,
+				CA3436FA204DB7E700789FDD /* MovieTableViewCell.swift */,
 				CA3436D0204DA19000789FDD /* Main.storyboard */,
 				CA3436D3204DA19000789FDD /* Assets.xcassets */,
 				CA3436D5204DA19000789FDD /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				CA3436CF204DA19000789FDD /* SecondViewController.swift in Sources */,
 				CA3436CB204DA19000789FDD /* AppDelegate.swift in Sources */,
+				CA3436FB204DB7E700789FDD /* MovieTableViewCell.swift in Sources */,
 				CA3436CD204DA19000789FDD /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
