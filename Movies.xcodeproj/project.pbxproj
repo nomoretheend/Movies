@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		41888D8B26FF08A0EB072418 /* Pods_MoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C2427795F1F8AEFD985B94 /* Pods_MoviesUITests.framework */; };
 		AF502A1320845EE3D37FA860 /* Pods_MoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64BB5EEAB605542428D59C4 /* Pods_MoviesTests.framework */; };
+		CA261EB920543AAC00DB3E7E /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA261EB820543AAC00DB3E7E /* MovieDetailViewController.swift */; };
+		CA261EBB20543D2400DB3E7E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA261EBA20543D2400DB3E7E /* Movie.swift */; };
 		CA3436CB204DA19000789FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3436CA204DA19000789FDD /* AppDelegate.swift */; };
 		CA3436CD204DA19000789FDD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3436CC204DA19000789FDD /* FirstViewController.swift */; };
 		CA3436CF204DA19000789FDD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3436CE204DA19000789FDD /* SecondViewController.swift */; };
@@ -45,6 +47,8 @@
 		9486D32EADD7B9A0800CD445 /* Pods-MoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoviesTests/Pods-MoviesTests.release.xcconfig"; sourceTree = "<group>"; };
 		95383F1BE0E037283ED23516 /* Pods_Movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8998924549B0404146BBBCD /* Pods-MoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviesTests/Pods-MoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA261EB820543AAC00DB3E7E /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		CA261EBA20543D2400DB3E7E /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		CA3436C7204DA19000789FDD /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3436CA204DA19000789FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA3436CC204DA19000789FDD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -142,9 +146,11 @@
 			isa = PBXGroup;
 			children = (
 				CA3436CA204DA19000789FDD /* AppDelegate.swift */,
+				CA261EBA20543D2400DB3E7E /* Movie.swift */,
 				CA3436CC204DA19000789FDD /* FirstViewController.swift */,
-				CA3436CE204DA19000789FDD /* SecondViewController.swift */,
 				CA3436FA204DB7E700789FDD /* MovieTableViewCell.swift */,
+				CA261EB820543AAC00DB3E7E /* MovieDetailViewController.swift */,
+				CA3436CE204DA19000789FDD /* SecondViewController.swift */,
 				CA3436D0204DA19000789FDD /* Main.storyboard */,
 				CA3436D3204DA19000789FDD /* Assets.xcassets */,
 				CA3436D5204DA19000789FDD /* LaunchScreen.storyboard */,
@@ -465,6 +471,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA3436CF204DA19000789FDD /* SecondViewController.swift in Sources */,
+				CA261EB920543AAC00DB3E7E /* MovieDetailViewController.swift in Sources */,
+				CA261EBB20543D2400DB3E7E /* Movie.swift in Sources */,
 				CA3436CB204DA19000789FDD /* AppDelegate.swift in Sources */,
 				CA3436FB204DB7E700789FDD /* MovieTableViewCell.swift in Sources */,
 				CA3436CD204DA19000789FDD /* FirstViewController.swift in Sources */,
