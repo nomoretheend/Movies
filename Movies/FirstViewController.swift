@@ -22,6 +22,8 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         // Do any additional setup after loading the view, typically from a nib.
         print("first")
         loadJson()
+        movieTable.delegate = self
+        movieTable.dataSource = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,15 +46,18 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         return cell
     }
     
-    struct ResponseData: Decodable {
-        var movies: [Movie]
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "movieDetail", sender: self)
     }
     
-    struct Movie: Decodable {
-        var id: Int
-        var title_en: String
-        var synopsis_en: String
-        var poster_ori: String
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? MovieDetailViewController {
+            destination.movie = moviesList[(movieTable.indexPathForSelectedRow?.row)!]
+        }
+    }
+    
+    struct ResponseData: Decodable {
+        var movies: [Movie]
     }
     
     func loadJson(){
