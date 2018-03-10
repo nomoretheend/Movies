@@ -10,8 +10,9 @@ import UIKit
 
 class MovieTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var movieImg: UIImageView!
+    
     @IBOutlet weak var movieTitle: UILabel!
+    @IBOutlet weak var movieImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
