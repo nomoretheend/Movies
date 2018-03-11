@@ -24,6 +24,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         loadJson()
         movieTable.delegate = self
         movieTable.dataSource = self
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -84,8 +85,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             
             }.resume()
     }
-    
-    
     
 }
 

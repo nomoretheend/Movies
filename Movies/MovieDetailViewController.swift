@@ -25,6 +25,7 @@ class MovieDetailViewController: UIViewController {
         let imagePath = "https://www.majorcineplex.com"+(movie?.poster_ori)!
         let resource = ImageResource(downloadURL: URL(string: imagePath)!, cacheKey: imagePath)
         movieImage.kf.setImage(with: resource)
+        movieDes.text = movie?.synopsis_en
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +33,16 @@ class MovieDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    @IBAction func onClickLoveMovie(_ sender: UIButton) {
+        let fmovie = FMovie(context: PersistenceService.context)
+        fmovie.id = Int64(movie!.id)
+        fmovie.title_en = movie?.title_en
+        fmovie.synopsis_en = movie?.synopsis_en
+        fmovie.poster_ori = movie?.poster_ori
+        PersistenceService.saveContext()
+    }
+    
     /*
     // MARK: - Navigation
 
